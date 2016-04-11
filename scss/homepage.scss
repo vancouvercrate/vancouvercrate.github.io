@@ -2,14 +2,14 @@
 // @include font-face(CircularBold, ../font/CircularStd-Bold);
 // @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
 @font-face {
-    font-family: Circular;
-    src: url('../font/CircularStd-Book.otf') format('opentype');;
-    // font-weight: bold;
+  font-family: Circular;
+  src: url('../font/CircularStd-Book.otf') format('opentype');;
+  // font-weight: bold;
 }
 @font-face {
-    font-family: Circular;
-    src: url('../font/CircularStd-Bold.otf') format('opentype');;
-    font-weight: bold;
+  font-family: Circular;
+  src: url('../font/CircularStd-Bold.otf') format('opentype');;
+  font-weight: bold;
 }
 
 $dark: #29637a;
@@ -22,18 +22,18 @@ $brightest: #e2ecf3;
 // }
 
 .hero {
-  background: url('../img/hero.jpeg') no-repeat center center;
+  background: url('../img/vancouver_Crate.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
   &:before {
     content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-image: linear-gradient(to bottom right,$brightest,$dark);
-		opacity: .8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,$brightest,$dark);
+    opacity: .8;
   }
   .intro {
     padding: 3rem;
@@ -70,21 +70,21 @@ $brightest: #e2ecf3;
   //   margin: 0 auto;
   // }
   @media only screen and (min-width: 40.063em) {
-  //   .tech-img {
-  //     height: 18rem;
-  //     width: 18rem;
-  //   }
+    //   .tech-img {
+    //     height: 18rem;
+    //     width: 18rem;
+    //   }
     h1 {
-        border: 1rem solid white;
-        padding: 2rem;
+      border: 1rem solid white;
+      padding: 2rem;
 
-  //     padding-top: 4.5rem;
-  //     text-align: right;
-  //     font-size: 2.5rem;
+      //     padding-top: 4.5rem;
+      //     text-align: right;
+      //     font-size: 2.5rem;
     }
-  //   p {
-  //     text-align: right;
-  //   }
+    //   p {
+    //     text-align: right;
+    //   }
   }
 }
 
@@ -102,7 +102,7 @@ $brightest: #e2ecf3;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .how-it-works {
@@ -118,9 +118,9 @@ $brightest: #e2ecf3;
     // padding-top: 4rem;
     display: inline-block;
     // &:first-child {
-      // padding-top: 5rem;
-      vertical-align: top;
-      margin: 0 20px 50px 20px;
+    // padding-top: 5rem;
+    vertical-align: top;
+    margin: 0 20px 50px 20px;
     // }
     .payment-svg {
       height: 5rem;
@@ -170,5 +170,18 @@ $brightest: #e2ecf3;
       content: "";
       padding: 0 0.4rem 0 0.8rem;
     }
+  }
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
