@@ -4198,7 +4198,6 @@ table.hover tr:nth-of-type(even):hover {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, #e2ecf3, #29637a);
     opacity: .8; }
   .hero .intro {
     padding: 3rem;
@@ -4244,6 +4243,8 @@ table.hover tr:nth-of-type(even):hover {
 .how-it-works {
   background-color: #e2ecf3;
   text-align: center; }
+  .how-it-works h3 {
+    font-size: 2rem; }
   .how-it-works .how-it-works-step-icon {
     background-color: #29637a;
     line-height: 15rem;
@@ -4253,7 +4254,7 @@ table.hover tr:nth-of-type(even):hover {
     text-align: center;
     display: inline-block;
     vertical-align: top;
-    margin: 0 20px 50px 20px; }
+    margin: 2rem 2rem 5rem 2rem; }
     .how-it-works .how-it-works-step-icon .payment-svg {
       height: 5rem; }
     .how-it-works .how-it-works-step-icon .shipping-svg {

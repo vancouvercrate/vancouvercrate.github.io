@@ -32,7 +32,7 @@ $brightest: #e2ecf3;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right,$brightest,$dark);
+    // background-image: linear-gradient(to bottom right,$brightest,$dark);
     opacity: .8;
   }
   .intro {
@@ -108,6 +108,9 @@ $brightest: #e2ecf3;
 .how-it-works {
   background-color: $brightest;
   text-align: center;
+  h3 {
+    font-size: 2rem;
+  }
   .how-it-works-step-icon {
     background-color: $dark;
     line-height: 15rem;
@@ -120,7 +123,7 @@ $brightest: #e2ecf3;
     // &:first-child {
     // padding-top: 5rem;
     vertical-align: top;
-    margin: 0 20px 50px 20px;
+    margin: 2rem 2rem 5rem 2rem;
     // }
     .payment-svg {
       height: 5rem;
