@@ -1,0 +1,174 @@
+// @include font-face(Circular, ../font/CircularStd-Book, 300, normal, otf);
+// @include font-face(CircularBold, ../font/CircularStd-Bold);
+// @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+@font-face {
+    font-family: Circular;
+    src: url('../font/CircularStd-Book.otf') format('opentype');;
+    // font-weight: bold;
+}
+@font-face {
+    font-family: Circular;
+    src: url('../font/CircularStd-Bold.otf') format('opentype');;
+    font-weight: bold;
+}
+
+$dark: #29637a;
+$bright: #b2c4be;
+$brightest: #e2ecf3;
+
+// *{
+//   font-family: Circular;
+//   font-weight: bold;
+// }
+
+.hero {
+  background: url('../img/hero.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,$brightest,$dark);
+		opacity: .8;
+  }
+  .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h1 {
+    border: .4rem solid white;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: #fff;
+    // font-size: 1.5rem;
+    line-height: 1em;
+    letter-spacing: -0.025em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  // .tech-img {
+  //   background: url('http://static.pexels.com/wp-content/uploads/2015/02/apple-hand-iphone-6-4322-525x350.jpg') no-repeat center center;
+  //   background-size: cover;
+  //   height: 9rem;
+  //   width: 9rem;
+  //   border-radius: 50%;
+  //   display: block;
+  //   margin: 0 auto;
+  // }
+  @media only screen and (min-width: 40.063em) {
+  //   .tech-img {
+  //     height: 18rem;
+  //     width: 18rem;
+  //   }
+    h1 {
+        border: 1rem solid white;
+        padding: 2rem;
+
+  //     padding-top: 4.5rem;
+  //     text-align: right;
+  //     font-size: 2.5rem;
+    }
+  //   p {
+  //     text-align: right;
+  //   }
+  }
+}
+
+.rounded-corners {
+  border-radius: 2rem;
+}
+
+.margin-row {
+  margin-top: 4rem;
+}
+
+.padded-row {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.how-it-works {
+  background-color: $brightest;
+  text-align: center;
+  .how-it-works-step-icon {
+    background-color: $dark;
+    line-height: 15rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    text-align: center;
+    // padding-top: 4rem;
+    display: inline-block;
+    // &:first-child {
+      // padding-top: 5rem;
+      vertical-align: top;
+      margin: 0 20px 50px 20px;
+    // }
+    .payment-svg {
+      height: 5rem;
+    }
+    .shipping-svg {
+      height: 8rem;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.button {
+  background-color: $dark;
+}
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  // margin-top: 3em;
+  p {
+    &.slogan {
+      color: #8d9093;
+      font-size: 1.8rem;
+      margin: 0 0 1rem;
+    }
+    &.copywrite {
+      color: #8f9296;
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+  .links a {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    &::after {
+      content: "•";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+    &:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+  }
+}
